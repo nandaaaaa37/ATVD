@@ -1,0 +1,9 @@
+import 'dart:io';
+void main(){
+  double cf, soma;
+  print("custo de fabrica:");
+  cf = double.parse(stdin.readLineSync()!);
+  
+  soma = cf + (0.28*cf) + (0.45*cf);
+  print("o custo ao consumidor é $soma");
+}

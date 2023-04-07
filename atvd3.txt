@@ -1,0 +1,14 @@
+import 'dart:io';
+void main(){
+  double n1, n2, n3, media;
+  print("primeira nota:");
+  n1 = double.parse(stdin.readLineSync()!);
+  print("segunda nota:");
+  n2 = double.parse(stdin.readLineSync()!);
+  print("terceira nota:");
+  n3 = double.parse(stdin.readLineSync()!);
+
+media = (2*n1 + 3*n2 + 5*n3) / (2+3+5);
+print("a media ponderada é $media");
+
+}

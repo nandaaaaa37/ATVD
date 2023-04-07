@@ -1,0 +1,11 @@
+import 'dart:io';
+void main(){
+  double ts, th, tm;
+  print("tempo de duração:");
+  ts = double.parse(stdin.readLineSync()!);
+
+  tm = ts/60;
+  th = tm/60;
+
+  print("o tempo em horas é $th, o tempo em minutos é $tm, e o tempo em segundos é $ts");
+}

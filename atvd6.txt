@@ -1,0 +1,21 @@
+import 'dart:io';
+void main(){
+  double a,b,c,d,e,f,x,y;
+  print("digite um numero:");
+  a = double.parse(stdin.readLineSync()!);
+  print("digite outro numero:");
+  b = double.parse(stdin.readLineSync()!);
+  print("outro numero:");
+  c = double.parse(stdin.readLineSync()!);
+  print("outro numero:");
+  d = double.parse(stdin.readLineSync()!);
+  print("mais um numero:");
+  e = double.parse(stdin.readLineSync()!);
+  print("e outro numero:");
+  f = double.parse(stdin.readLineSync()!);
+
+  x = (c*e - b*f) / (a*e - b*d);
+  y = (a*f - c*d) / (a*e - b*d);
+
+  print("o valor de x é $x, e o valor de y é $y");
+}
